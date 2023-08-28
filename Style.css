@@ -84,3 +84,11 @@ section{
 #sideleft,#sideright{
     height: fit-content;
 }
+#footer{
+    background-color: var(--sec-bg-color);
+}
+#copyright{
+    display: block;
+    font-size: small;
+    
+}
