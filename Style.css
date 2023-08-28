@@ -1,0 +1,72 @@
+*{
+    outline: none;
+    scroll-behavior: smooth;
+    
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+:root{
+    --bg-color: #15202B;
+    --sec-bg-color: #192734;
+    --font-color:#ffffff;
+    --add-color: #22303C;
+    --hover:#8899A6;
+}
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;   
+}
+body{
+    background: var(--sec-bg-color);
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 5.5rem;
+}
+#icon{
+    font-size: 4rem;
+    color: floralwhite;
+    cursor: default;
+}
+#nav a{
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    color: var(--font-color);
+    transition: .3s;
+}
+#nav a:hover,
+#nav a.active{
+    color: var(--hover);
+}
+section{
+    padding: 10rem 9% 2rem;
+    min-height: 100vh;
+    color: var(--font-color);
+    font-size: x-large;
+    font-weight: 700;
+}
+#span1{
+    color: sandybrown;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+#main-contect{
+    display: flexbox;
+    grid-column: auto;
+    justify-content: space-around;
+    font-size: large;
+    color: var(--font-color);
+}
