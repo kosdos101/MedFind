@@ -1,7 +1,7 @@
 *{
     outline: none;
     scroll-behavior:smooth;
-    
+    user-select: none;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -85,10 +85,32 @@ section{
     height: fit-content;
 }
 #footer{
+    margin: .9rem;
     background-color: var(--sec-bg-color);
+    display: flex;
+    justify-content:space-around ;
 }
 #copyright{
-    display: block;
+    width: 80%;
+    color: var(--font-color);
     font-size: small;
+    font-family: 'Poppins' , sans-serif ;
+    padding-left: 20rem;
+    text-align: center;
     
 }
+.social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--font-color);
+    border: .2rem solid rgb(69, 45, 207);
+    border-radius: 50%;
+    padding: .3rem;
+    transition: .3s;
+}
+.social:hover{
+    background-color:rgba(0, 0, 0, 0.685)
+}
+/* End of Home CSS */
