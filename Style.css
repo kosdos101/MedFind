@@ -16,6 +16,12 @@
     --add-color: #22303C;
     --hover:#8899A6;
 }
+#website{
+    color: var(--font-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 3.3rem;
+    animation: 1.5s 0s infinite running ColorChange;
+}
 html{
     overflow-x: hidden;
     font-size: 62.5%;   
@@ -100,17 +106,21 @@ section{
     
 }
 .social{
-    display: inline-flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     color: var(--font-color);
-    border: .2rem solid rgb(69, 45, 207);
-    border-radius: 50%;
+    border: 3px solid rgb(69, 45, 207);
+    border-radius: 1.5rem;
     padding: .3rem;
     transition: .3s;
+    background-color:var(--bg-color) ;
 }
 .social:hover{
-    background-color:rgba(0, 0, 0, 0.685)
+    background-color:rgba(0, 0, 0, 0.808)
+}
+@keyframes ColorChange{
+    50%{color: var(--hover);}
 }
 /* End of Home CSS */
